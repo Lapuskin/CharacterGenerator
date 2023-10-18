@@ -1,5 +1,6 @@
 .form_block{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 2em 2em;
 }
