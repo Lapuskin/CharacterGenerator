@@ -1,0 +1,14 @@
+.header{
+    text-align: center;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+}
+
+.state{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 0.5em 0em 0.5em;
+}

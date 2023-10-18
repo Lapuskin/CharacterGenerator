@@ -4,22 +4,35 @@ a{
 }
 
 body {
+  background-image: url("/backgroundback.jpg");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
+}
+html{
+  height: 100%;
 }
 
 footer{
   background-color: #120E0F;
   width: 100%;
+  flex: 0 0 auto;
+}
+
+footer span{
+  padding-left: 3%;
 }
 
 header {
-  padding: 0% 7% 0% 7%;
   background-color: #120E0F;
   width: 100%;
 }
@@ -27,25 +40,7 @@ header {
 .container{
   background-color: #D3B69B;
   margin: auto;
-  width: 88%;
-}
-
-.logo{
-  font-size: xx-large;
-  color: #D2B681;
-}
-
-header ul{
-  display: flex;
-  align-items: center;
-}
-
-header li{
-  list-style-type:none;
-  padding-left: 3%;
-
-}
-
-header a{
-  color: #FFFFFF;
+  width: 85%;
+  min-height: 100%;
+  flex: 1 0 auto;
 }

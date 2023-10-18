@@ -1,0 +1,23 @@
+.button {
+    transition-duration: 0.5s;
+    font-size: large;
+    padding: 1em;
+    background: none;
+    border-color: #120E0F;
+    color: #120E0F;
+    border: solid;
+    border-width: 2px;
+    border-radius: 0.2em;
+}
+
+.button:hover {
+    transition-duration: 0.5s;
+    cursor: grab;
+    color: #D2B681;
+    background-color: #120E0F;
+    border-color: #120E0F;
+}
+
+.block{
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+.form_block{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 2em;
+}
+
+.generate_position{
+    margin: auto;
+}

@@ -1,7 +1,7 @@
 const TheFooter = () => {
     return (
         <footer>
-            Created by &copy;Lapushkin
+            <span>Created by &copy;Lapushkin</span>
         </footer>
     );
 };

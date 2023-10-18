@@ -1,4 +1,13 @@
 .form {
-    border-color: black;
-    border-radius: 2em;
+   width: 18em;
+   font-size: large;
+   font-family: Prata;
+   padding: 0.5em;
+   background-color: #120E0F;
+   color: #D2B681;
+   border: 0;
+}
+
+.item {
+   font-family: Prata;
 }

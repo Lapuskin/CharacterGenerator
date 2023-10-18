@@ -1,18 +1,19 @@
-import Link from "next/link";
 import styles from "../styles/form.module.css"
 
 interface TheFormProops {
-    params: string[];
+    params: string[]
+    change: any
+    name: string
 }
 
-const TheForm: React.FC<TheFormProops> = ({ params }) => {
+const TheForm: React.FC<TheFormProops> = ({ params , name, change}) => {
     return (
-        <div className={styles.form}>
+        <select className={styles.form} name={name} onChange={change}>
             {params.map((param, index) => (
-                <option key={index} value={param}>{param}</option>
-            ))
-                }
-        </div>
+                <option className={styles.item} key={index} value={param}>{param}</option>
+                ))
+            }
+        </select>
     );
 };
 
