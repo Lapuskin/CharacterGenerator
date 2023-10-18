@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/header.module.css"
-import TheMenu from "./TheMenu";
-import TheBurger from "./TheBurger"
+
 
 const TheHeader = () => {
 
@@ -21,9 +20,9 @@ const TheHeader = () => {
                     <div className={styles.logo}>DungeonGen</div> 
                     <div className={styles.dash}>|</div>
                 </li>
-                <li><Link href="/" >HOME</Link></li>
+                {/* <li><Link href="/" >HOME</Link></li> */}
                 <li><Link href="/character-generator">CHARACTER GENERATOR</Link></li>
-                <li><Link href="/about">ABOUT</Link></li>
+                {/* <li><Link href="/about">ABOUT</Link></li> */}
             </ul>
         </header>
     );

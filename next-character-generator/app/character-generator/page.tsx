@@ -5,7 +5,7 @@ import TheForm from "@/components/TheForm";
 import styles from "../../styles/generator-page.module.css"
 import TheButton from "@/components/TheButton";
 import { useState , ChangeEvent} from "react";
-import { Character } from "../utils/json_character";
+import { Character } from "@/app/utils/json_character";
 
 export default function CharacterGenerator() {
     const [formData, setFormData] = useState<Record<string, string>>({

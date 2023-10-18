@@ -1,6 +1,5 @@
-
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
 
 body {
@@ -11,25 +10,30 @@ body {
   height: 100%;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-html{
+
+html {
   height: 100%;
 }
 
-footer{
+footer {
   background-color: #120E0F;
   width: 100%;
-  flex: 0 0 auto;
+  color: #D3B69B;
+  min-height: 5em;
+  display: flex;
+  align-items: center;
 }
 
-footer span{
-  padding-left: 3%;
+footer span {
+  display: block;
+  margin-left: 5%;
 }
 
 header {
@@ -37,10 +41,17 @@ header {
   width: 100%;
 }
 
-.container{
+.container {
   background-color: #D3B69B;
   margin: auto;
   width: 85%;
   min-height: 100%;
   flex: 1 0 auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
 }

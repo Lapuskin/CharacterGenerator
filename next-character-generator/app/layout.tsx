@@ -3,7 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { PT_Serif_Caption, Prata } from 'next/font/google'
 import { TheFooter } from '@/components/TheFooter'
-import TheMenu from '@/components/TheMenu'
+
 
 const prata = Prata({weight: ['400'], subsets: ['cyrillic']})
 const serif = PT_Serif_Caption({weight: ['400'],subsets: ['cyrillic']})
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={prata.className}>
-        <TheMenu/>
+
         <div className='wrapper'>
           <TheHeader />
           <main className='container'>
