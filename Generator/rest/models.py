@@ -58,6 +58,7 @@ class PersonalityMeaning(models.Model):
         return f"{self.letter}"
 
 class Personality(models.Model):
+
     first_letter = models.ForeignKey(PersonalityMeaning, on_delete=models.DO_NOTHING,related_name='first_letter_personality', default=None)
     second_letter = models.ForeignKey(PersonalityMeaning, on_delete=models.DO_NOTHING,related_name='second_letter_personality', default=None)
     third_letter = models.ForeignKey(PersonalityMeaning, on_delete=models.DO_NOTHING,related_name='third_letter_personality', default=None)
