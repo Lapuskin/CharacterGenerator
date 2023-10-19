@@ -12,3 +12,18 @@
     flex-direction: column;
     padding: 0em 0.5em 0em 0.5em;
 }
+.description
+{
+    padding-left: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.description div{
+    max-width: max-content;
+}
+
+.description p{
+    margin: 2em;
+    max-width: 45%;
+}

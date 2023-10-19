@@ -46,8 +46,10 @@ const TheCharacter: React.FC<TheCharacterProops> = ({ params }) => {
                 </div>
             </div>
 
-            <div>
-                <p><strong>Крткое описание :</strong>
+            <div className={styles.description}>
+                <p><strong>Краткое описание:</strong>
+                    <span>Про расу: {params.race.description}</span>
+                    <span>Про тип личности:</span>
                     <ul>
                         <li>{params.personality.first_letter}</li>
                         <li>{params.personality.second_letter}</li>
@@ -55,9 +57,11 @@ const TheCharacter: React.FC<TheCharacterProops> = ({ params }) => {
                         <li>{params.personality.fourth_letter}</li>
                     </ul>
                 </p>
-                <p><strong>Особенности:</strong> {params.peculiarities.description}</p>
-                <p><strong>Идеал:</strong></p>
-                <p><strong>Слабость:</strong></p>
+                <div>
+                    <p><strong>Особенности:</strong> {params.peculiarities.description}</p>
+                    <p><strong>Идеал:</strong> {params.ideal.description}</p>
+                    <p><strong>Слабость:</strong> {params.weakness.description}</p>
+                </div>
             </div>
         </div>
     );
