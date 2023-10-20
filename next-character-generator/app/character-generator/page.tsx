@@ -1,4 +1,5 @@
 "use client"
+import Head from "next/head";
 import TheCharacter from "@/components/TheCharacter";
 import TheParagraph from "@/components/TheParagraph";
 import TheForm from "@/components/TheForm";
@@ -57,6 +58,11 @@ export default function CharacterGenerator() {
    
 
     return (<div>
+        <Head>
+            <title>Генератор персонажа</title> 
+            <meta name="description" content="Удобный и простой генератор персонажей мастера для настольной игры DUNGEONS AND DRAGONS" />
+            <meta name="keywords" content="генератор персонажа, мастер, днд, D&D, dungeons and dragons, подземелья и драконы" />
+        </Head>
         <TheParagraph title={'ГЕНЕРАТОР ПЕРСОНАЖЕЙ МАСТЕРА'} text1 = {'Данный генератор создает уникальных персонажей, определяя их тип личности, расу, характеристики и особенности.\n\nМы понимаем, что создание персонажей может быть сложным и занимать много времени. Поэтому наш генератор поможет вам быстро получить интересного персонажа для ваших игровых сессий. Вы сможете использовать сгенерированные персонажи как вдохновение для своих собственных созданий или прямо внедрять их в свою игру. \nНе упускайте возможность использовать наш генератор случайных персонажей для мастера игры в D&D и получите уникального персонажа уже сегодня!'} />
         <form onSubmit={handleSubmit}>
             <div className={styles.form_block}>
